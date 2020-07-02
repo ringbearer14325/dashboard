@@ -1,11 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
+import Chat from "./components/Chat.js"
+import Kanban from "./components/Kanban.js"
 import './App.css';
 
 function App() {
-  return (
-    <div>this</div>
-  );
-}
+      return (
+      <Chat></Chat>
+      <Kanban></Kanban>
+
+    
+    );
+  
+  }
+
 
 export default App;
+ssf
