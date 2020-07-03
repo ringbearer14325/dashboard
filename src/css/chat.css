@@ -1,0 +1,24 @@
+
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+
+#chat {
+  padding:10px;
+  border: 11px;
+  border-color: aqua;
+
+}  
+
+#chatForm {
+  padding: 1px;
+  border: 2px;
+  border-color: brown;
+}
+
+.widget {
+  padding: 5px;
+
+}
+  
