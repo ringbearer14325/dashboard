@@ -1,7 +1,7 @@
 import React from "react";
 
 
-class addTodo extends React.Component {
+class addTodo extends React.Component() {
   constructor() {
     super();
     

@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/ItemStyle.css'
 
-class todoItem extends React.Component {
+class todoItem extends React.Component() {
 
     render() {
 

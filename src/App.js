@@ -1,18 +1,25 @@
 import React from 'react';
-import Chat from "./components/Chat.js"
-import Kanban from "./components/Kanban.js"
-import './App.css';
+import Dashboard from './components/Dashboard.js';
+import './css/App.css';
+import Parse from 'parse';
+import * as Env from "./environments";
+
+
+
+Parse.initialize(Env.APPLICATION_ID, Env.JAVASCRIPT_KEY);
+Parse.serverURL = Env.SERVER_URL;
+
 
 function App() {
       return (
-      <Chat></Chat>
-      <Kanban></Kanban>
+        <div>
+          <Dashboard></Dashboard>
+        </div>
 
-    
-    );
-  
-  }
+
+      
+      );
+}
 
 
 export default App;
-ssf
