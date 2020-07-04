@@ -1,5 +1,6 @@
 {
   "name": "dashboard",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -42,6 +43,6 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ringbearer-ramos14325/dashboard/issues"
-  },
-  "homepage": "https://github.com/ringbearer-ramos14325/dashboard#readme"
+  }
+  
 }
