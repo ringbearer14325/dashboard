@@ -1,25 +1,21 @@
-import React from 'react';
-import Dashboard from './components/Dashboard.js';
-import './css/App.css';
-import Parse from 'parse';
-import * as Env from "./environments";
+import React from "react";
+import "./css/App.css";
 
 
-
-Parse.initialize(Env.APPLICATION_ID, Env.JAVASCRIPT_KEY);
-Parse.serverURL = Env.SERVER_URL;
 
 
 function App() {
-      return (
-        <div>
-          <Dashboard></Dashboard>
-        </div>
+            return (            
+                  <div>
+                  <h1>hello from the App component</h1>
+                  </div>
+        
 
 
       
       );
-}
+   }
+
 
 
 export default App;
