@@ -1,6 +1,6 @@
 import React from "react";
 import List from "../components/List";
-
+import AddItem from "../components/AddItem";
 
 
 class Kanban extends React.Component {
@@ -16,7 +16,11 @@ class Kanban extends React.Component {
 
     render() {
         return (
-            <div><List></List></div>
+            <div>
+                <List>{this.updateTodo}</List>
+                <AddItem>{this.addItem}</AddItem>
+            </div>
+
         )
     };
 
@@ -32,8 +36,8 @@ class Kanban extends React.Component {
     }
 
 
-    addItem = () => {
-         this.setState({ todos: [...this.state.todo, {
+    addItem = async (todo) => {
+         this.setState({ todos: [...this.state.todos, {
             text: todo,
             completed: false
         }] });
@@ -41,7 +45,7 @@ class Kanban extends React.Component {
         console.log(localStorage.getItem('todos'));
     }
 
-    updateTodo = async (todo) => {
+    updateTodo = (todo) => {
         const newTodos = this.state.todos.map(_todo => {
             if(todo === _todo) 
                 return {
@@ -51,7 +55,7 @@ class Kanban extends React.Component {
                 else 
                  return _todo
                 });
-      await this.setState({ todos: newTodos});
+      this.setState({ todos: newTodos});
       localStorage.setItem('todos', JSON.stringify(this.state.todos));
     }
 

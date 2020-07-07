@@ -14,14 +14,24 @@ class List extends React.Component{
             { 
                 todos.map((_todo, _index) => {
                     return (
-                        <Item></Item>
+                        <Item updateTodoFn={this.props} key={_index} todo={_todo}></Item>
                     )
                 })
             }
             </div>
         )
     };
+    
+
+    update = (todo) => {
+        this.props.updateTodoFn(todo);
+    }
+
+
 }
+
+
+
 
 
 export default List;
